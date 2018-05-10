@@ -1,0 +1,26 @@
+腾讯云主机：CentOS 7.3 64位 + 深度学习环境
+
+1.升级至最新版本TensorFlow
+	pip install --upgrade tensorflow
+
+2. 升级至最新版本TensorFlow 
+	pip install --upgrade pip
+
+3.下载git 
+	yum install git
+
+4. 通过输入以下命令从 GitHub 克隆 TensorFlow 模型代码库
+	git clone https://github.com/tensorflow/models
+
+5.	cd models/samples/core/get_started/
+ 运行测试程序
+	python premade_estimator.py
+
+运行程序后，系统应该会输出以三个预测行结尾的一大串信息，如下所示：
+
+...
+Prediction is "Setosa" (99.6%), expected "Setosa"
+
+Prediction is "Versicolor" (99.8%), expected "Versicolor"
+
+Prediction is "Virginica" (97.9%), expected "Virginica"
